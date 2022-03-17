@@ -1,0 +1,83 @@
+###################### Base Settings######################
+enableTensorboard: True #
+test_during_training: True #
+
+### database ###
+TID2013:
+  datainfo: ./data/TID2013fullinfo.mat
+  im_dir: /media/ldq/Research/Data/tid2013/distorted_images/ # /datasets/qa/tid2013/distorted_images/ #
+TID2008:
+  datainfo: ./data/TID2008fullinfo.mat
+  im_dir: /media/ldq/Research/Data/tid2008/distorted_images/ # /datasets/qa/tid2008/distorted_images/ # 
+TID2013blur:
+  datainfo: ./data/TID2013info.mat
+  im_dir: /media/ldq/Research/Data/tid2013/distorted_images/ # /datasets/qa/tid2013/distorted_images/ #
+TID2008blur:
+  datainfo: ./data/TID2008info.mat
+  im_dir: ./data/tid2008/distorted_images/ # /datasets/qa/tid2008/distorted_images/ #
+  im_dir1: ./data/tid/
+TID2008jp2k:
+  datainfo: ./data/TID2008infojp2k.mat
+  im_dir: ./data/tid2008/distorted_images/ # /datasets/qa/tid2008/distorted_images/ #
+  im_dir1: ./data/tid/
+TID2008jpeg:
+  datainfo: ./data/TID2008infojpeg.mat
+  im_dir: ./data/tid2008/distorted_images/ # /datasets/qa/tid2008/distorted_images/ #
+  im_dir1: ./data/tid/
+TID2008wn:
+  datainfo: ./data/TID2008infown.mat
+  im_dir: ./data/tid2008/distorted_images/ # /datasets/qa/tid2008/distorted_images/ #
+  im_dir1: ./data/tid/
+
+LIVE:
+  datainfo: ./data/LIVEfullinfo.mat
+  im_dir: ./data/databaserelease2/
+LIVEjpeg:
+  datainfo: ./data/LIVEjpeginfo.mat
+  im_dir: ./data/databaserelease2/
+LIVEwn:
+  datainfo: ./data/LIVEwninfo.mat
+  im_dir: ./data/databaserelease2/
+LIVEblur:
+  datainfo: ./data/LIVEblurinfo.mat
+  im_dir: ./data/databaserelease2/
+LIVEff:
+  datainfo: ./data/LIVEffinfo.mat
+  im_dir: ./data/databaserelease2/
+
+
+
+CSIQjp2k:
+  datainfo: ./data/CSIQfullinfojp2k.mat
+  im_dir: ./data/CSIQ/dst_imgs/ # /datasets/qa/tid2008/distorted_images/ #
+  im_dir1: ./data/CSIQ/dst/
+CSIQjpeg:
+  datainfo: ./data/CSIQfullinfojpeg.mat
+  im_dir: ./data/CSIQ/dst_imgs/ # /datasets/qa/tid2008/distorted_images/ #
+  im_dir1: ./data/CSIQ/dst/
+CSIQwn:
+  datainfo: ./data/CSIQfullinfown.mat
+  im_dir: ./data/CSIQ/dst_imgs/ # /datasets/qa/tid2008/distorted_images/ #
+  im_dir1: ./data/CSIQ/dst/
+CSIQblur:
+  datainfo: ./data/CSIQfullinfoblur.mat
+  im_dir: ./data/CSIQ/dst_imgs/ # /datasets/qa/tid2008/distorted_images/ #
+  im_dir1: ./data/CSIQ/dst/
+
+
+patch_size: 32
+stride: 32
+
+train_ratio: 0.7
+val_ratio: 0.1
+test_ratio: 0.2
+
+train_ratio_tid: 0.0
+test_ratio_tid: 1.0
+
+### model ###
+
+kernel_size: 3
+n_kernels: 64
+n1_nodes: 800
+n2_nodes: 800
