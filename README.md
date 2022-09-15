@@ -1,6 +1,6 @@
 # MB-CNN
 PyTorch implementation of the following paper:
-[Z. Pan, F. Yuan, X. Wang, L. Xu, S. Xiao and S. Kwong, "No-Reference Image Quality Assessment via Multi-Branch Convolutional Neural Networks," in *IEEE Transactions on Artificial Intelligence*, doi: 10.1109/TAI.2022.3146804.](http://openaccess.thecvf.com/content_cvpr_2014/papers/Kang_Convolutional_Neural_Networks_2014_CVPR_paper.pdf)
+[Z. Pan, F. Yuan, X. Wang, L. Xu, S. Xiao and S. Kwong, "No-Reference Image Quality Assessment via Multi-Branch Convolutional Neural Networks," in *IEEE Transactions on Artificial Intelligence*, doi: 10.1109/TAI.2022.3146804.](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9695198)
 
 ### Note
 - The optimizer is chosen as Adam here, instead of the SGD with momentum in the paper.
